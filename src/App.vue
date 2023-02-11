@@ -9,6 +9,7 @@
     <n-button type="warning" @click="handleGoTo('home')"> home </n-button>
     <n-button type="error" @click="handleGoTo('login')"> login </n-button>
   </n-space>
+  <div>你好啊,欢迎进入🐷空间</div>
   <!-- 路由出口 -->
   <!-- 路由匹配到的组件将渲染在这里 -->
   <router-view></router-view>
