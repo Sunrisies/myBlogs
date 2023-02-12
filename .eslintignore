@@ -6,3 +6,4 @@ node_modules
 src/assets
 # 忽略dist目录下文件的语法检查
 dist
+package.json

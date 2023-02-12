@@ -34,7 +34,8 @@ export default defineConfig({
     open: true,
     proxy: {
       '/api': {
-        target: 'http://localhost:3000/', // 目标url
+        // target: process.env.NODE_ENV === 'production' ? 'http://chaoyangqq.co:996/' : 'http://localhost:3000/', // 目标url
+        target: 'http://chaoyangqq.co:996/',
         changeOrigin: true, // 支持跨域
         rewrite: (path) => path.replace(/^\/api/, '')
         // 重写路径,替换/api
