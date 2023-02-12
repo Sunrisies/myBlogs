@@ -18,7 +18,7 @@ export default defineConfig({
       imports: [
         'vue',
         {
-          'naive-ui': ['useDialog', 'useMessage', 'useNotification', 'useLoadingBar']
+          'naive-ui': ['useDialog', 'useMessage', 'useNotification', 'useLoadingBar', 'FormInst']
         },
         'vue-router',
         'pinia'
@@ -34,10 +34,10 @@ export default defineConfig({
     open: true,
     proxy: {
       '/api': {
-        target: 'https://api.shop.eduwork.cn/', //目标url
-        changeOrigin: true, //支持跨域
+        target: 'http://localhost:3000/', // 目标url
+        changeOrigin: true, // 支持跨域
         rewrite: (path) => path.replace(/^\/api/, '')
-        //重写路径,替换/api
+        // 重写路径,替换/api
       }
     }
   },
