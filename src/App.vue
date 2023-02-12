@@ -17,21 +17,9 @@
 
 <script setup lang="ts">
 const router = useRouter()
-const handleGoTo = (val: string) => {
-  router.push({ name: val })
+
+const handleGoTo = (s: string) => {
+  router.push({ name: s })
 }
 </script>
-<style scoped lang="less">
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-  .logo.vue:hover {
-    filter: drop-shadow(0 0 2em #42b883aa);
-  }
-}
-</style>
+<style scoped lang="less"></style>
